@@ -120,7 +120,7 @@ background-color: #ffa5ab;
     transform: translateY(-5px);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 730px) {
     .container{
     width: 400px;
     height: 300px;
