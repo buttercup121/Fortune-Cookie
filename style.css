@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #450920; */
+    background-image: url("bg2.webp");
+    background-size: contain;
+    background-position: center;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15%;
+    border: 16px dashed #a53860;
+}
+.container:hover{
+    transform: scale(1.02);
+}
+
+.fortune{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 50px;
+    width: 500px;
+    height: 200px;
+    /* background-color: aqua; */
+     /* cursor: pointer; */
+}
+
+.cookie{
+      width: 500px;
+    height: 200px;
+    position: absolute;
+      background-image: url("fortune.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 160px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cracked{
+    z-index: 2;
+     width: 500px;
+    height: 200px;
+    background-image: url("cracked.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+}
+
+h1{
+    margin-left: 150px;
+    margin-top: 25px;
+    color: #450920;
+    font-size: 36px;
+   
+}
+.text {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  color: #450920;
+  font-size: 16px;
+  text-align: center;
+  width: 33%;
+  height: 40px;
+  z-index: 3;
+  font-weight: bolder;
+  opacity: 0;
+  rotate: -4deg;
+  font-size: 16px;
+
+}
+
+.btn{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+   margin-top: 40px;
+   margin-left: 250px;
+   border-radius: 25%;
+z-index: 0;
+cursor: pointer;
+color: #450920;
+background-color: #ffa5ab;
+border: 6px solid #a53860 ;
+
+}
+
+.btn2{
+      width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bolder;
+     border-radius: 25%;
+   margin-left: 250px;
+   opacity: 0;
+   z-index: 2;
+   cursor: pointer;
+   color: #450920;
+background-color: #ffa5ab;
+   border: 6px solid #a53860 ;
+}
+
+
+.btn:hover, .btn2:hover{
+      
+    transform: scale(1.02);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 430px) {
+    .container{
+    width: 400px;
+    height: 300px;
+    border: 10px dashed #a53860 ;
+}
+.cookie{
+     width: 300px;
+    height: 100px;
+    margin-left: 120px;
+  margin-top: -10px;
+}
+.cracked{
+  width: 300px;
+    height: 100px;
+    margin-left: 15px;
+  margin-top: -10px;
+}
+.btn,.btn2{
+      width: 120px;
+    height: 50px;
+    font-size: 15px;
+    position:relative;
+    top: -140px;
+    left: -100px;
+}
+h1{
+font-size: 20px;
+margin-left: 120px;
+}
+
+    .text {
+  position: absolute;
+  left: 32%;
+  top: 22%;
+  width: 22%;
+  height: 40px;
+  font-size: 12px;
+
+}
+}
